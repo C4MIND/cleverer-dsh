@@ -21,7 +21,7 @@ import { randomUUID } from 'node:crypto'
 
 export const name = 'dsh-plan-discipline'
 
-const PLUGIN_SOURCE = { kind: 'plugin', plugin: name }
+const PLUGIN_SOURCE = { kind: name, plugin: name }
 
 /** 多步骤信号词（用户消息命中即视为需要规划） */
 const STEP_WORDS = [

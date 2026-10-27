@@ -224,7 +224,7 @@ const msg19 = (r19?.messages || []).find(m => m.source?.plugin === 'dsh-plan-dis
 assert(!!msg19?.id, '注入消息有 id')
 assert(msg19?.role === 'user', 'role=user')
 assert(msg19?.content?.[0]?.type === 'text', 'content 为 text 块')
-assert(msg19?.source?.kind === 'plugin', 'source.kind=plugin')
+assert(msg19?.source?.kind === 'dsh-plan-discipline', 'source.kind=dsh-plan-discipline')
 
 // =========================================================================
 console.log('\n=== 测试 20: 空内容消息 → 无信号不注入 ===')

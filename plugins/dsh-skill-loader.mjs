@@ -20,7 +20,7 @@ import { makeCleanupTimer } from './_shared.mjs'
 
 export const name = 'dsh-skill-loader'
 
-const PLUGIN_SOURCE = { kind: 'plugin', plugin: name }
+const PLUGIN_SOURCE = { kind: name, plugin: name }
 
 /** 默认 skill 注册表：场景关键词 → skill 名 + 触发条件说明 */
 const DEFAULT_SKILLS = [

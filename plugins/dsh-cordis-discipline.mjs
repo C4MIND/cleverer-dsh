@@ -24,7 +24,7 @@ import { makeCleanupTimer } from './_shared.mjs'
 export const name = 'dsh-cordis-discipline'
 export const inject = ['systemPrompt']
 
-const PLUGIN_SOURCE = { kind: 'plugin', plugin: name }
+const PLUGIN_SOURCE = { kind: name, plugin: name }
 
 /** cordis 工具名族 */
 const CORDIS_TOOLS = new Set([

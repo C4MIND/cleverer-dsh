@@ -168,7 +168,7 @@ const m12 = injected(r12)[0]
 assert(!!m12?.id, '消息有 id')
 assert(m12?.role === 'user', 'role=user')
 assert(m12?.content?.[0]?.type === 'text', 'content text 块')
-assert(m12?.source?.kind === 'plugin' && m12?.source?.plugin === 'dsh-skill-loader', 'source 标注插件')
+assert(m12?.source?.kind === 'dsh-skill-loader' && m12?.source?.plugin === 'dsh-skill-loader', 'source 标注插件')
 
 // =========================================================================
 console.log('\n=== 测试 13: config.skills 自定义注册表 ===')

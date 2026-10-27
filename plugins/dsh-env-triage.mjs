@@ -24,7 +24,7 @@ import { isFailure, extractText, classifyError, similarity, currentTurn, makeCle
 
 export const name = 'dsh-env-triage'
 
-const PLUGIN_SOURCE = { kind: 'plugin', plugin: name }
+const PLUGIN_SOURCE = { kind: name, plugin: name }
 
 const DEFAULT_CONFIG = {
   /** 溯源卡触发：连续失败 ≥ N 次 */

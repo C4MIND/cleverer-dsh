@@ -21,7 +21,7 @@ export const name = 'anti-stuck'
 /** 插件配置（均可选） */
 export const Config = undefined // 用普通对象即可，见 apply 的 config 参数
 
-const PLUGIN_SOURCE = { kind: 'plugin', plugin: 'anti-stuck' }
+const PLUGIN_SOURCE = { kind: 'anti-stuck', plugin: 'anti-stuck' }
 
 const DEFAULT_CONFIG = {
   /** 同一指纹连续失败多少次后拒绝下一次相同调用 */
